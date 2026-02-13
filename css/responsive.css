@@ -1,0 +1,55 @@
+@media (max-width: 880px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .wv-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .wv-feed {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 0;
+  }
+
+  .nav-list {
+    justify-content: flex-start;
+  }
+
+  .footer-shell {
+    grid-template-columns: 1fr;
+    justify-items: flex-start;
+  }
+
+  .footer-tags {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav-list a {
+    padding: 0.36rem 0.7rem;
+    font-size: 0.82rem;
+  }
+
+  .member-card img,
+  .album-cover,
+  .gallery-item img {
+    height: 200px;
+  }
+
+  .hero-copy,
+  .hero-media,
+  .quiz-card {
+    padding: 1rem;
+  }
+
+  .wv-featured {
+    min-height: 240px;
+  }
+}

@@ -1,0 +1,59 @@
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.member-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  isolation: isolate;
+}
+
+.member-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.member-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(18, 14, 32, 0.78) 62%
+  );
+  color: var(--white);
+  padding: 1.1rem 0.95rem 0.9rem;
+  transform: translateY(62%);
+  transition: transform 0.35s ease;
+}
+
+.member-card:hover img {
+  transform: scale(1.06);
+}
+
+.member-card:hover .member-overlay {
+  transform: translateY(0%);
+}
+
+.member-overlay h3 {
+  margin-bottom: 0.28rem;
+  font-size: 1rem;
+}
+
+.member-overlay p {
+  font-size: 0.84rem;
+  opacity: 0.92;
+}
+
+.group-tag {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-soft);
+}

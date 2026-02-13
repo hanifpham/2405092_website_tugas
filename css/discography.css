@@ -1,0 +1,147 @@
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.album-card {
+  background: var(--surface-glass);
+  border-radius: 18px;
+  border: 1px solid var(--line-blue);
+  padding: 1rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+}
+
+.album-cover {
+  border-radius: 14px;
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.toggle-lyrics {
+  margin-top: 0.7rem;
+  background: linear-gradient(120deg, var(--accent-blue), var(--accent-blue-soft));
+  color: var(--white);
+  border: none;
+  padding: 0.56rem 0.86rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.lyrics {
+  margin-top: 0.65rem;
+  padding: 0.7rem;
+  border-radius: 12px;
+  background: var(--chip-pink);
+  border: 1px dashed var(--line-pink-strong);
+  font-size: 0.88rem;
+  display: none;
+}
+
+.lyrics.open {
+  display: block;
+}
+
+.album-collections {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.album-group {
+  background: var(--surface-glass-dim);
+  border: 1px solid var(--line-blue-soft);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.album-group .section-title {
+  margin-bottom: 0.5rem;
+}
+
+.album-toggle {
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: left;
+}
+
+.album-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.album-title-row h3 {
+  font-size: 1rem;
+}
+
+.album-date {
+  margin-top: 0.2rem;
+  color: var(--text-soft);
+  font-size: 0.86rem;
+}
+
+.album-indicator {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--line-blue-strong);
+  display: grid;
+  place-items: center;
+  color: var(--text-accent);
+  font-size: 1rem;
+  line-height: 1;
+  transition:
+    transform 0.28s ease,
+    background-color 0.28s ease,
+    color 0.28s ease;
+}
+
+.album-panel {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition:
+    max-height 0.32s ease,
+    opacity 0.32s ease,
+    margin-top 0.32s ease;
+}
+
+.album-accordion-card.open .album-panel {
+  opacity: 1;
+  margin-top: 0.75rem;
+}
+
+.album-accordion-card.open .album-indicator {
+  transform: rotate(45deg);
+  background: var(--chip-pink-strong);
+  color: var(--accent-pink);
+}
+
+.song-list {
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.song-list li {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 199, 220, 0.2),
+    rgba(191, 230, 255, 0.24)
+  );
+  border: 1px solid var(--line-blue-soft);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+}

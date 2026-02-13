@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hachunies | Bias Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Hachunies</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profiles.html">Profiles</a></li>
+            <li><a href="discography.html">Discography</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="timeline.html">Fandom Timeline</a></li>
+            <li><a class="active" href="quiz.html">Bias Quiz</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container quiz-page">
+      <section class="quiz-hero">
+        <p class="pixel-label">Hachunies Test</p>
+        <h1 class="section-title">Bias Quiz</h1>
+        <p class="quiz-lead">Cari vibe member yang paling cocok sama kepribadian kamu.</p>
+        <div class="quiz-tags">
+          <span>4 Questions</span>
+          <span>Dynamic Result</span>
+          <span>Bunnies x Hachu</span>
+        </div>
+      </section>
+
+      <section class="quiz-card" id="quizApp" aria-live="polite">
+        <div class="quiz-head">
+          <p class="quiz-progress" id="quizProgress">Pertanyaan 1</p>
+          <p class="quiz-count" id="quizCount">1 / 4</p>
+        </div>
+
+        <div class="quiz-progressbar" aria-hidden="true">
+          <span id="quizProgressFill"></span>
+        </div>
+
+        <h2 class="quiz-question" id="quizQuestion"></h2>
+        <div class="quiz-options" id="quizOptions"></div>
+
+        <div class="quiz-result" id="quizResult">
+          <p class="pixel-label">Quiz Result</p>
+          <h3 class="quiz-result-name" id="quizResultName"></h3>
+          <p id="quizResultText"></p>
+          <div class="button-row quiz-result-actions">
+            <button class="btn secondary" id="quizRestart" type="button">Coba Lagi</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <a class="footer-brand" href="index.html">Hachunies</a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="profiles.html">Profiles</a>
+          <a href="discography.html">Discography</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="quiz.html">Bias Quiz</a>
+        </nav>
+        <div class="footer-tags">
+          <span>Bunnies</span>
+          <span>Hachu</span>
+        </div>
+      </div>
+      <div class="container footer-bottom">Fanmade archive - 2026</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
